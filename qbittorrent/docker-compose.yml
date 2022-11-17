@@ -6,7 +6,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Europe/Madrid
       - WEBUI_PORT=8080
     volumes:
       - "D:/torrents/config:/config"
