@@ -1,0 +1,14 @@
+version: "3"
+services:
+  dashy:
+    image: lissy93/dashy:latest
+    container_name: Dashy
+    volumes:
+      - /app/public/:/conf/
+    ports:
+      - 89:80
+    environment:
+      - NODE_ENV=production
+      - UID=1001
+      - GID=100
+    restart: always
